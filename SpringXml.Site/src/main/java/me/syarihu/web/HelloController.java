@@ -1,4 +1,4 @@
-package me.tomo.web;
+package me.syarihu.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

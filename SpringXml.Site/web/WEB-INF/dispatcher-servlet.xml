@@ -13,7 +13,7 @@
     <mvc:default-servlet-handler/>
     <mvc:annotation-driven/>
 
-    <context:component-scan base-package="me.tomo"/>
+    <context:component-scan base-package="me.syarihu"/>
 
     <mvc:resources mapping="/resources/**" location="/WEB-INF/"/>
 
