@@ -4,6 +4,8 @@ import me.syarihu.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * Created by Taichi Sato on 15/12/03.
  */
@@ -14,6 +16,11 @@ public class ProductServicImpl implements ProductServic {
 
     @Override
     public Product findProduct() {
-        return productDao.findProduct("ホチキス");
+        return productDao.findProduct();
+    }
+
+    @Override
+    public List<Product> selectBookList() {
+        return productDao.findAllProduct();
     }
 }

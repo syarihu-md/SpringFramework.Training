@@ -20,7 +20,7 @@ public class HelloController {
         model.put("title", "Hello");
         model.put("msg", "Hello World!!");
 
-        return "index";
+        return "user";
     }
 
 }

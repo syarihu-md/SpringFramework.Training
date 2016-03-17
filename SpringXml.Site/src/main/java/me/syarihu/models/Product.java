@@ -4,11 +4,24 @@ package me.syarihu.models;
  * Created by Taichi Sato on 15/12/03.
  */
 public class Product {
+    private int id;
     private String name;
     private int price;
     public Product(String name, int price) {
         this.name = name;
         this.price = price;
+    }
+
+    public Product() {
+        
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -29,6 +42,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product [name=" + name + ", price=" + "]";
+        return "Product [id="+id+", name=" + name + ", price=" + price + "]";
     }
 }

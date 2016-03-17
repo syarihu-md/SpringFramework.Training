@@ -1,0 +1,3 @@
+INSERT INTO PRODUCT VALUES (1, 'Effective Android', 2000);
+INSERT INTO PRODUCT VALUES (2, 'Master of Fragment', 1800);
+INSERT INTO PRODUCT VALUES (3, 'Sweet Android', 1800);

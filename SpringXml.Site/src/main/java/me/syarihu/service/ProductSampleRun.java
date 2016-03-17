@@ -19,5 +19,7 @@ public class ProductSampleRun {
         ProductServic productServic = context.getBean(ProductServic.class);
         Product product = productServic.findProduct();
         System.out.println(product);
+
+        productServic.selectBookList().forEach(System.out::println);
     }
 }
