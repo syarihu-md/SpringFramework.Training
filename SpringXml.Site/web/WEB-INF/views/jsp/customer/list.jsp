@@ -13,6 +13,17 @@
 </head>
 <body>
 <h2>顧客一覧画面</h2>
+<c:if test="${editCustomer != null}">
+    以下の顧客が更新されました。<br/>
+    <dl>
+        <dt>名前</dt>
+        <dd><c:out value="${editCustomer.name}"/></dd>
+        <dt>住所</dt>
+        <dd><c:out value="${editCustomer.address}"/></dd>
+        <dt>Eメールアドレス</dt>
+        <dd><c:out value="${editCustomer.emailAddress}"/></dd>
+    </dl>
+</c:if>
 <table border="1">
     <tr>
         <th>ID</th>

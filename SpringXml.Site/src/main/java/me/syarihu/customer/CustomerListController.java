@@ -3,6 +3,7 @@ package me.syarihu.customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -34,5 +35,17 @@ public class CustomerListController {
         Customer customer = customerService.findById(customerId);
         model.addAttribute("customer", customer);
         return "customer/detail";
+    }
+
+    @ExceptionHandler(DataNotFoundException.class)
+    public String handleException(DataNotFoundException exception, Model model) {
+        model.addAttribute("exception", exception);
+        return "customer/notfound";
+    }
+
+    @ExceptionHandler
+    public String handleException(Exception exception, Model model) {
+        model.addAttribute("exception", exception);
+        return "customer/notfound";
     }
 }
