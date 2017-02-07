@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-/**
- * Created by Taichi Sato on 16/03/17.
- */
 @Controller
 @RequestMapping("/customer/{customerId}")
 @SessionAttributes("editCustomer")
