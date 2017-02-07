@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-/**
- * Created by Taichi Sato on 16/03/17.
- */
 @Controller
 public class CustomerListController {
     @Autowired
