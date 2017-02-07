@@ -7,9 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * Created by Taichi Sato on 15/12/03.
- */
 @Component
 public class ProductDaoImpl implements ProductDao {
 
