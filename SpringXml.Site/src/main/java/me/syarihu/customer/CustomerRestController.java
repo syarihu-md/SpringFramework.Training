@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.nio.charset.Charset;
 
-/**
- * Created by Taichi Sato on 16/03/31.
- */
 @Controller
 @RequestMapping("/api/customer")
 public class CustomerRestController {
