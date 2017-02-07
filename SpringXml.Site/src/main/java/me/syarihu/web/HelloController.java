@@ -7,9 +7,6 @@ import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-/**
- * Created by usr0200379 on 15/08/08.
- */
 @Controller
 public class HelloController {
 
